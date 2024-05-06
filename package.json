@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "container-doc.d.ts",
+  "main": "container-doc.ts",
+  "module": "container-doc.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

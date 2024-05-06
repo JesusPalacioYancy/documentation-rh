@@ -14,7 +14,7 @@ export class MyIcon extends LitElement {
       color: white;
       padding: 14px 28px;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 10px;
       background-color: #13083b; 
       transition: box-shadow 0.3s ease-in-out;
     }
