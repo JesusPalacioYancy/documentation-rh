@@ -11,9 +11,9 @@ export class WelcomeDoc extends LitElement {
   .box {
     width: 650px;
     height: 610px;
-    background-color: #d1d1d1; 
+    background-color: #e2e4e7; 
     border: 1px solid #cccccc; 
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: auto;
   }
 
@@ -46,7 +46,6 @@ export class WelcomeDoc extends LitElement {
     font-size: 24px;
   }
 
-  
   .menssage {
     font-size: 17px;
     display: flex;
@@ -56,24 +55,22 @@ export class WelcomeDoc extends LitElement {
     color: #333;
   }
 
+  .box::-webkit-scrollbar {
+    width: 3px;
+  }
 
-   /* Estilos del scrollbar */
-   .box::-webkit-scrollbar {
-      width: 3px;
-    }
+  .box::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
 
-    .box::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
+  .box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
 
-    .box::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 6px;
-    }
-
-    .box::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
+  .box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
   `;
 
   render() {
@@ -92,7 +89,7 @@ export class WelcomeDoc extends LitElement {
       <info-father></info-father>
     </div>
     `;
-  }
-}
+  };
+};
 
 

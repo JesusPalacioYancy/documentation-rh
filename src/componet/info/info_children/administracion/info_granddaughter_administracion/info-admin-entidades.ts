@@ -2,21 +2,21 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 
-@customElement('info-contratacion')
+@customElement('info-admin-entidades')
 
-export class InfoContratacion extends LitElement {
+export class InfoAdminEntidades extends LitElement {
 
   static styles = css`
     div{
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-left: 25px;
-      margin-right: 25px;
-    } 
-
+      margin-left: 26px;
+      margin-right: 26px;
+    }
+    
     details { 
-      background-color: #dddddd;
+      background-color: #f0f0f0;
       width: 100%;
       margin-bottom: 1rem;   
       border-radius: 8px;  
@@ -57,22 +57,22 @@ export class InfoContratacion extends LitElement {
     return html`
     <div>
         <details>
-          <summary>Trabajadores</summary>
+          <summary>Admin. de Riesgos Laborales</summary>
           <p>TEST</p>
         </details>
         
         <details>
-          <summary>En proceso de contratación</summary>
+          <summary>Entidades Promotoras de Salud</summary>
           <p>TEST</p>
         </details>
 
         <details>
-          <summary>Otros sí</summary>
+          <summary>Admin. de Fondos de Pension</summary>
           <p>TEST</p>
         </details>
 
         <details>
-          <summary>Informe documentación</summary>
+          <summary>Cesantías</summary>
           <p>TEST</p>
         </details>
     </div>  
@@ -82,6 +82,6 @@ export class InfoContratacion extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'info-contratacion': InfoContratacion;
+    'info-admin-entidades': InfoAdminEntidades;
   }
 };

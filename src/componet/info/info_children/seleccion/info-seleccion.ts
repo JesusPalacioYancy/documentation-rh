@@ -2,18 +2,18 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 
-@customElement('info-contratacion')
+@customElement('info-seleccion')
 
-export class InfoContratacion extends LitElement {
+export class InfoSeleccion extends LitElement {
 
   static styles = css`
-    div{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin-left: 25px;
-      margin-right: 25px;
-    } 
+     div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-right: 25px;
+     } 
 
     details { 
       background-color: #dddddd;
@@ -36,7 +36,7 @@ export class InfoContratacion extends LitElement {
       display: flex;
       justify-content: center;
     }
-
+    
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;
@@ -57,31 +57,17 @@ export class InfoContratacion extends LitElement {
     return html`
     <div>
         <details>
-          <summary>Trabajadores</summary>
-          <p>TEST</p>
-        </details>
-        
-        <details>
-          <summary>En proceso de contratación</summary>
-          <p>TEST</p>
-        </details>
-
-        <details>
-          <summary>Otros sí</summary>
-          <p>TEST</p>
-        </details>
-
-        <details>
-          <summary>Informe documentación</summary>
+          <summary>Candidatos</summary>
           <p>TEST</p>
         </details>
     </div>  
+
     `;
   };
 };
 
 declare global {
   interface HTMLElementTagNameMap {
-    'info-contratacion': InfoContratacion;
+    'info-seleccion': InfoSeleccion;
   }
 };

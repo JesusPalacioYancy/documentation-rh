@@ -7,14 +7,13 @@ export const myIconClickEvent = new CustomEvent('my-icon-click');
 
 export class MyIcon extends LitElement {
 
-
   static styles = css`
     .search-button {
       border: none;
       color: white;
       padding: 14px 28px;
       cursor: pointer;
-      border-radius: 10px;
+      border-radius: 20px;
       background-color: #13083b; 
       transition: box-shadow 0.3s ease-in-out;
     }
@@ -22,12 +21,11 @@ export class MyIcon extends LitElement {
     .search-button:hover {
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     }
-
   `;
 
   handleClick() {
     this.dispatchEvent(myIconClickEvent);
-  }
+  };
 
   render() {
     return html`
@@ -36,12 +34,10 @@ export class MyIcon extends LitElement {
       </button>
     `;
   };
-}
-
+};
 
 declare global {
   interface HTMLElementTagNameMap {
     'my-element': MyIcon;
   }
-}
-
+};

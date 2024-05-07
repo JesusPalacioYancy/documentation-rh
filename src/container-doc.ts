@@ -4,20 +4,20 @@ import "./componet/pages/my-icon.ts";
 import "./componet/pages/welcome-doc.ts";
 
 @customElement("my-container")
-export class MyContainer extends LitElement {
 
+export class MyContainer extends LitElement {
 
   constructor() {
     super();
     this.handleMyIconClick = this.handleMyIconClick.bind(this);
-  }
+  };
 
   private showWelcomeDoc: boolean = false;
 
   handleMyIconClick() {
     this.showWelcomeDoc = !this.showWelcomeDoc;
     this.requestUpdate();
-  }
+  };
 
   render() {
     return html`
@@ -26,5 +26,5 @@ export class MyContainer extends LitElement {
         ${this.showWelcomeDoc ? html`<welcome-doc/>` : null}
       </div>
     `;
-  }
-}
+  };
+};
