@@ -11,9 +11,11 @@ export class MyIcon extends LitElement {
     .search-button {
       border: none;
       color: white;
-      padding: 14px 28px;
+      padding: 1px 6px;
       cursor: pointer;
-      border-radius: 20px;
+      width: 45px; 
+      height: 45px; 
+      border-radius: 50%; 
       background-color: #13083b; 
       transition: box-shadow 0.3s ease-in-out;
     }
@@ -30,7 +32,7 @@ export class MyIcon extends LitElement {
   render() {
     return html`
       <button class="search-button" @click="${this.handleClick}">
-      doc
+        <h3>?</h3>
       </button>
     `;
   };

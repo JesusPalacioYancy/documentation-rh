@@ -1,10 +1,16 @@
 {
   "name": "documentation-rh",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/container-doc.ts",
+  "exports": {
+    ".": "./dist/container-doc.ts"
+  },
   "types": "container-doc.d.ts",
-  "main": "container-doc.ts",
+  "files": [
+    "dist"
+  ],
   "module": "container-doc.ts",
   "scripts": {
     "dev": "vite",

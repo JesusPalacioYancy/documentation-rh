@@ -91,5 +91,3 @@ export class WelcomeDoc extends LitElement {
     `;
   };
 };
-
-
