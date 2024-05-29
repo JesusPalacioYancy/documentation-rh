@@ -1,28 +1,28 @@
 {
   "name": "documentation-rh",
   "private": false,
-  "version": "0.0.0",
-  "type": "module",
-  "main": "dist/container-doc.ts",
+  "version": "0.1.5",
+  "main": "dist/container-doc.es.js",
+  "module": "dist/container-doc.es.js",
   "exports": {
-    ".": "./dist/container-doc.ts"
+    ".": "./dist/container-doc.es.js"
   },
-  "types": "container-doc.d.ts",
+  "types": "types/container-doc.d.ts",
   "files": [
     "dist"
   ],
-  "module": "container-doc.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "lit": "^3.1.2",
+    "lit": "^2.6.1",
     "sweetalert2": "^11.10.8"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1"
   }
 }

@@ -2,11 +2,8 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('info-nom-migraciones')
-
 export class InfoNomMigraciones extends LitElement {
-
   static styles = css`
-
     div{
       display: flex;
       justify-content: center;
@@ -36,13 +33,13 @@ export class InfoNomMigraciones extends LitElement {
       display: flex;
       justify-content: center;
     }
+
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;
       background: #e1effd;
       border-left: 2px solid #364f6b;
     }
-
 
     details[open] {
       background: #ffffff;

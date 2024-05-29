@@ -1,13 +1,9 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-nom-informes')
-
 export class InfoNomInformes extends LitElement {
-  
   static styles = css`
-
     div{
       display: flex;
       justify-content: center;
@@ -15,7 +11,7 @@ export class InfoNomInformes extends LitElement {
       margin-left: 26px;
       margin-right: 26px;
     }
-
+    
     details { 
       background-color: #f0f0f0;
       width: 100%;
@@ -37,13 +33,13 @@ export class InfoNomInformes extends LitElement {
       display: flex;
       justify-content: center;
     }
+
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;
       background: #e1effd;
       border-left: 2px solid #364f6b;
     }
-
 
     details[open] {
       background: #ffffff;

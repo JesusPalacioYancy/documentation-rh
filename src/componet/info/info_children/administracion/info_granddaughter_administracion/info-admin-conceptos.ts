@@ -2,9 +2,7 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('info-admin-conceptos')
-
 export class InfoAdminConceptos extends LitElement {
-
   static styles = css`
     div{
       display: flex;
@@ -46,7 +44,7 @@ export class InfoAdminConceptos extends LitElement {
     details[open] {
       background: #ffffff;
     }
-
+    
     details[open] summary {
       font-weight: 600;
     }

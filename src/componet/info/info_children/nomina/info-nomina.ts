@@ -10,9 +10,7 @@ import './info-granddaughter-nomina/info-nom-bono-navidad'
 import './info-granddaughter-nomina/info-nom-liquidacion-empleados'
 
 @customElement('info-nomina')
-
 export class InfoNomina extends LitElement {
-
   static styles = css`
     div{
       display: flex;
@@ -20,7 +18,7 @@ export class InfoNomina extends LitElement {
       flex-direction: column;
       margin-left: 25px;
       margin-right: 25px;
-    } 
+    }
     
     details { 
       background-color:  #dddddd;
@@ -43,6 +41,7 @@ export class InfoNomina extends LitElement {
       display: flex;
       justify-content: center;
     }
+
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;

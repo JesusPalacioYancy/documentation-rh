@@ -1,19 +1,17 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-nom-liquidacion-empleados')
-
 export class InfoNomLiquidacionEmpleados extends LitElement {
-
   static styles = css`
     div{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 26px;
-        margin-right: 26px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 26px;
+      margin-right: 26px;
     }
+
     details { 
       background-color: #f0f0f0;
       width: 100%;
@@ -35,6 +33,7 @@ export class InfoNomLiquidacionEmpleados extends LitElement {
       display: flex;
       justify-content: center;
     }
+
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;
@@ -42,16 +41,14 @@ export class InfoNomLiquidacionEmpleados extends LitElement {
       border-left: 2px solid #364f6b;
     }
 
-
     details[open] {
       background: #ffffff;
     }
-
+    
     details[open] summary {
       font-weight: 600;
     }
   `;
-
 
   render() {
     return html`

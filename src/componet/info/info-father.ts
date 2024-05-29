@@ -7,9 +7,7 @@ import './info_children/administracion/info-administracion'
 import './info_children/nomina/info-nomina'
 
 @customElement('info-father')
-
 export class InfoFather extends LitElement {
-
   static styles = css`
   div {
     display: flex;

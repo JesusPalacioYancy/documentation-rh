@@ -1,27 +1,25 @@
-// vite.config.js
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   build: {
     lib: {
-      // Could also be a dictionary or array of multiple entry points
-      entry: resolve(__dirname, 'src/container-doc.ts'),
-      name: 'MyContainer',
-      // the proper extensions will be added
-      fileName: 'container-doc.ts',
+      entry: 'src/container-doc.ts',
+      formats: ['es'],
+      fileName: (format) => `container-doc.${format}.js`
     },
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['lit'],
-      output: {
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        globals: {
-          vue: 'Lit',
-        },
-      },
+      external: [/^lit/],
     },
   },
-})
+  plugins: [
+    dts({
+      outputDir: 'dist/types',
+      insertTypesEntry: true,
+      tsConfigFilePath: './tsconfig.json', 
+    })
+  ],
+  esbuild: {
+    target: 'es2018'
+  }
+});

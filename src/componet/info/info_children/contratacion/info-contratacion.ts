@@ -1,11 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-contratacion')
-
 export class InfoContratacion extends LitElement {
-
   static styles = css`
     div{
       display: flex;
@@ -14,7 +11,7 @@ export class InfoContratacion extends LitElement {
       margin-left: 25px;
       margin-right: 25px;
     } 
-
+    
     details { 
       background-color: #dddddd;
       width: 100%;

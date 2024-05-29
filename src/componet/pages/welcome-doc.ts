@@ -4,17 +4,17 @@ import { customElement } from 'lit/decorators.js';
 import './../info/info-father'
 
 @customElement('welcome-doc')
-
 export class WelcomeDoc extends LitElement {
-  
   static styles = css`
   .box {
     width: 650px;
-    height: 610px;
+    height: 600px;
     background-color: #e2e4e7; 
     border: 1px solid #cccccc; 
     border-radius: 5px;
     overflow: auto;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px); 
   }
 
   .box input[type="text"] {
@@ -23,7 +23,6 @@ export class WelcomeDoc extends LitElement {
     padding: 10px; 
     border: 2px solid #ccc; 
     border-radius: 4px;
-
   }
 
   .search-button {
@@ -36,7 +35,7 @@ export class WelcomeDoc extends LitElement {
     background-color: #13083b; 
     transition: box-shadow 0.3s ease-in-out; 
   }
-
+  
   .title {
     display: flex;
     justify-content: center; 
@@ -90,4 +89,10 @@ export class WelcomeDoc extends LitElement {
     </div>
     `;
   };
+};
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'welcome-doc': WelcomeDoc;
+  }
 };

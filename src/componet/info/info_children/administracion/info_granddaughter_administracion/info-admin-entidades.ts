@@ -1,11 +1,8 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-admin-entidades')
-
 export class InfoAdminEntidades extends LitElement {
-
   static styles = css`
     div{
       display: flex;
@@ -13,8 +10,8 @@ export class InfoAdminEntidades extends LitElement {
       flex-direction: column;
       margin-left: 26px;
       margin-right: 26px;
-    }
-    
+    } 
+
     details { 
       background-color: #f0f0f0;
       width: 100%;
@@ -47,7 +44,7 @@ export class InfoAdminEntidades extends LitElement {
     details[open] {
       background: #ffffff;
     }
-
+    
     details[open] summary {
       font-weight: 600;
     }

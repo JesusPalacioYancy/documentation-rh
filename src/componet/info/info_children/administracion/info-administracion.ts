@@ -11,9 +11,7 @@ import './info_granddaughter_administracion/info-admin-seleccion'
 import './info_granddaughter_administracion/info-admin-puc'
 
 @customElement('info-administracion')
-
 export class InfoAdministracion extends LitElement {
-
   static styles = css`
     div {
       display: flex;
@@ -55,7 +53,7 @@ export class InfoAdministracion extends LitElement {
     details[open] {
       background: #ffffff;
     }
-
+    
     details[open] summary {
       font-weight: 600;
     }

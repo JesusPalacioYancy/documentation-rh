@@ -1,19 +1,17 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-seleccion')
-
 export class InfoSeleccion extends LitElement {
 
   static styles = css`
-     div{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 25px;
-        margin-right: 25px;
-     } 
+    div{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 25px;
+      margin-right: 25px;
+    } 
 
     details { 
       background-color: #dddddd;

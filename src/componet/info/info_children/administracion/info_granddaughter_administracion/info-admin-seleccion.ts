@@ -2,9 +2,7 @@ import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
 @customElement('info-admin-selecccion')
-
 export class InfoAdminSelecccion extends LitElement {
-
   static styles = css`
     div{
       display: flex;

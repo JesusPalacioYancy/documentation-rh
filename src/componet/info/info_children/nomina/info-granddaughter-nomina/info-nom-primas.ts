@@ -1,13 +1,9 @@
 import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
-
 @customElement('info-nom-primas')
-
 export class InfoNomPrimas extends LitElement {
-  
   static styles = css`
-
     div{
       display: flex;
       justify-content: center;
@@ -37,13 +33,13 @@ export class InfoNomPrimas extends LitElement {
       display: flex;
       justify-content: center;
     }
+
     details p {
       padding: 1rem;
       margin: 0 1rem 1rem 1rem;
       background: #e1effd;
       border-left: 2px solid #364f6b;
     }
-
 
     details[open] {
       background: #ffffff;
@@ -53,8 +49,7 @@ export class InfoNomPrimas extends LitElement {
       font-weight: 600;
     }
   `;
-
-
+  
   render() {
     return html`
     <div>
